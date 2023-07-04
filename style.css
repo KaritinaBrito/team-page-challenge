@@ -48,7 +48,6 @@ html{
     width: 264px;
     height: 383px;
     position: relative;
-    padding: 15px; 
     margin-bottom: 40px;    
 }
 .card-container img {
@@ -75,23 +74,102 @@ html{
     top: 100px;
     bottom: 50px;
 }
-.footer-container{
-    display: flex;
-    position: fixed;
-    margin-bottom: 0px;
-    left: 0px;
-    right: 0px;
-    justify-content: center;
-    align-items: center;
-    bottom: 0px;
-} 
-.footer-container p{
-    color: #BDBDBD;
+footer {
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #a9a9a9;
+    height: 4rem;
 }
-.footer-container img{
+footer p {
+    font-weight: bold;
+    color: #a9a9a9;
+}
+footer img{
     width: 14px;
     height: 14px;
 }
+@media only screen and (max-width: 768px){
+    html{
+        font-size: 62.5%;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'PT Serif', serif;
+    }
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: start;
+        max-width: 600px;
+    }
+    .header-left{
+        margin-left: 0;
+        font-family: 'PT Serif', serif;
+        font-size: 36px;
+        font-weight: 700;
+        
+    }
+    .header-right{
+        margin-left: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    .header-right h3{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .header-right p{
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: -90px
+    }
+    .main-container{
+        display: grid;
+        grid-template-columns: repeat(2, [col-start] 160px [col-end]);
+        gap: 25px;
+        justify-content: center;
 
+    }
+    .card-container{
+        width: 160px;
+        height: 240px;
+        margin: 50;
+    }
+    .middle-container{
+        top: 0px;
+        bottom: 0px;
+    }
+    .card-container img {
+        width: 140px;
+        height: 210px;
+    }
+    .card-container:nth-child(2),
+    .card-container:nth-child(4),
+    .card-container:nth-child(6) {
+        margin-top: 99px;
+    }
+    .card-container:nth-child(6){
+        margin-bottom: 50px;
+    }
+    footer {
+        font-size: 14px;
+        font-weight: 500;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        color: #a9a9a9;
+        height: 4rem;
+        font-weight: bold;
+        margin-top: 80px;
+
+    }
+    footer img{
+        width: 14px;
+        height: 14px;
+    }
+}
