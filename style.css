@@ -87,6 +87,7 @@ html{
         grid-template-columns: 1fr;
         justify-content: start;
         max-width: 600px;
+        justify-items: center;
     }
     .header-left{
         margin-left: 0;
@@ -112,8 +113,10 @@ html{
         display: grid;
         grid-template-columns: repeat(2, [col-start] 160px [col-end]);
         gap: 25px;
-        justify-content: center;
+        justify-content: start;
+        margin: 85px;
         height: 150px;
+        
     }
     .card-container{
         width: 160px;
